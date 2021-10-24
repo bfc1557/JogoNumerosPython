@@ -6,7 +6,6 @@ Answer = True #True/False para as respostas aparecerem na consola
 #Importar da biblioteca "random" e "tkinter"
 from random import randint
 from tkinter import *
-import tkinter
 
 #Variaveis e gerador do número
 NumeroFacil = int(randint(1,10))
@@ -20,7 +19,7 @@ if Answer == True :
     print(NumeroExtremo)
 
 #Texto inicial
-Inicio = tkinter.Tk()
+Inicio = Tk()
 Inicio.title("Adivinha o Número")
 Inicio.minsize("500","300")
 Titulo = Label(Inicio, text="Adivinha o Número",)
